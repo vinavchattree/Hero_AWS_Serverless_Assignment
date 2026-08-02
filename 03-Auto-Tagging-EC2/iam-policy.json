@@ -1,0 +1,32 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "EC2TaggingPermissions",
+            "Effect": "Allow",
+            "Action": [
+                "ec2:CreateTags",
+                "ec2:DescribeInstances"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Sid": "CloudTrailLookupPermission",
+            "Effect": "Allow",
+            "Action": [
+                "cloudtrail:LookupEvents"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Sid": "LambdaLogging",
+            "Effect": "Allow",
+            "Action": [
+                "logs:CreateLogGroup",
+                "logs:CreateLogStream",
+                "logs:PutLogEvents"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
