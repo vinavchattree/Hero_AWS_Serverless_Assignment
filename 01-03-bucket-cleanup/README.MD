@@ -35,5 +35,11 @@ add_new_object()
 
     CUTOFF and bucket
 
+
+6) Lambda vs traditional method
+
+Lambda can be used when we are trying to develop custom logic based on object and metadata instead of just timeperiod and custom time period & functionality.
+Also if we need to trigger other actions before or after deletion, lambda is better
+
      Cutoff for date and bucket for identifying which bucket objects to be checked
 
