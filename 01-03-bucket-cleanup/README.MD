@@ -35,4 +35,5 @@ add_new_object()
 
     CUTOFF and bucket
 
+     Cutoff for date and bucket for identifying which bucket objects to be checked
 
