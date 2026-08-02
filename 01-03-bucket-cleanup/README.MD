@@ -25,8 +25,14 @@ def add_new_object():
 add_new_object()
 
 2) Basically what I did was tried to get all the objects in the bucket using paginator  page size 100
-    I then checked each object date recieved in lastmodified with current date and called DeleteObject  to delete it 
+    I then checked each object date recieved in lastmodified with current date and called DeleteObject  to delete it using delete_objects
 
-3) But I was getting timeout error as I was trying to delete too may objects seperately
+3) But I was getting timeout error(checked in cloudwatch log) as I was trying to delete too may objects seperately
 
-4) To handle this I switched to bulk deletion method in boto3
+4) To handle this I switched to bulk deletion method in boto3. also increases  timout for lambda.
+
+5) used two env variables :
+
+    CUTOFF and bucket
+
+
